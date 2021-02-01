@@ -14,7 +14,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         List<Datos> datosList = new ArrayList<>();
-        readCSV(datosList);
+        LecturaCSV(datosList);
         Menu();
 
         int n = scanner.nextInt();
@@ -56,7 +56,7 @@ public class Main {
         System.out.println("7.-Mostrar Segundo nombre de los Usuarios Ordenado alfabeticamente");
     }
 
-    private static List<Datos> readCSV(List<Datos> datos) throws IOException {
+    private static List<Datos> LecturaCSV(List<Datos> datos) throws IOException {
         Scanner scanner = new Scanner(System.in);
 
         String pathCSV = "https://support.staffbase.com/hc/en-us/article_attachments/360009197071/email.csv";
@@ -73,12 +73,9 @@ public class Main {
 
         return datos;
 
-
     }
 
     
-
-
     private static Datos datos(String[] data) {
         String username = data[0];
         int identifier = Integer.parseInt(data[1]);
