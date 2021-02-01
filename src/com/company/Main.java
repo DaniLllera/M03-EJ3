@@ -17,6 +17,11 @@ public class Main {
         LecturaCSV(datosList);
         Menu();
 
+        //COMENTARIOS
+        /*Metodo para leer el fichero de internet linea a linea y usando el split*/
+        /*Metodo del menu en el cual da opciones a elegir*/
+        /*Una clase aparte donde estan las variables con getters and setters, constructor y toString*/
+        /*E utilizado el .filter , .map , .distinct , .max , .min , .count , .sorted*/
         int n = scanner.nextInt();
         switch(n) {
             case 1:
